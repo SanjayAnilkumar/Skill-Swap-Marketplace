@@ -15,7 +15,7 @@ function BrowseSkills() {
 
   // Fetch all skills
   useEffect(() => {
-    fetch("http://localhost:5000/api/skills")
+    fetch("https://skillswap-backend-jjao.onrender.com/api/skills")
       .then((response) => response.json())
       .then((data) => {
         setSkills(data);
@@ -92,7 +92,7 @@ function BrowseSkills() {
 
     try {
       const response = await fetch(
-        "http://localhost:5000/api/requests",
+        "https://skillswap-backend-jjao.onrender.com/api/requests",
         {
           method: "POST",
 

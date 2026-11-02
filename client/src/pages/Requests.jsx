@@ -17,7 +17,7 @@ function Requests() {
     }
 
     fetch(
-  `http://localhost:5000/api/requests/${user.id}`
+  `https://skillswap-backend-jjao.onrender.com/api/requests/${user.id}`
 )
       .then((response) => response.json())
       .then((data) => {
@@ -39,7 +39,7 @@ function Requests() {
   ) => {
     try {
       const response = await fetch(
-        `http://localhost:5000/api/requests/${requestId}/${action}`,
+        `https://skillswap-backend-jjao.onrender.com/api/requests/${requestId}/${action}`,
         {
           method: "PUT",
         }

@@ -8,7 +8,7 @@ function StudentProfile() {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    fetch("http://localhost:5000/api/skills")
+    fetch("https://skillswap-backend-jjao.onrender.com/api/skills")
       .then((response) => response.json())
       .then((data) => {
         const studentSkills = data.filter(

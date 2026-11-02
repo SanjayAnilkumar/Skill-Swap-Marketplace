@@ -2,8 +2,8 @@
 import { useEffect, useState } from "react";
 import "./Profile.css";
 
-const API = "http://localhost:5000/api/skills";
-const PROFILE_API = "http://localhost:5000/api/auth/profile";
+const API = "https://skillswap-backend-jjao.onrender.com/api/skills";
+const PROFILE_API = "https://skillswap-backend-jjao.onrender.com/api/auth/profile";
 
 function Profile() {
   const [user, setUser] = useState(null);

@@ -25,7 +25,7 @@ function ForgotPassword() {
 
     try {
       const response = await fetch(
-        "http://localhost:5000/api/auth/forgot-password",
+        "https://skillswap-backend-jjao.onrender.com/api/auth/forgot-password",
         {
           method: "POST",
           headers: {

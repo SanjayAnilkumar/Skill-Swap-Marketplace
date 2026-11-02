@@ -54,7 +54,7 @@ function AddSkill() {
 
     try {
       const response = await fetch(
-       "http://localhost:5000/api/skills", 
+       "https://skillswap-backend-jjao.onrender.com/api/skills", 
         {
           method: "POST",
           headers: {

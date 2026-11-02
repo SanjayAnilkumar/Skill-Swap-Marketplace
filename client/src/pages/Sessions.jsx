@@ -2,7 +2,7 @@ import { useCallback, useEffect, useMemo, useState } from "react";
 import { Link } from "react-router-dom";
 import "./Sessions.css";
 
-const API = "http://localhost:5000/api";
+const API = "https://skillswap-backend-jjao.onrender.com/api";
 function getSavedUser() { try { return JSON.parse(localStorage.getItem("user") || "null"); } catch { return null; } }
 function Sessions() {
   const user = getSavedUser();

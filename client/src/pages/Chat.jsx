@@ -26,7 +26,7 @@ function Chat() {
 
     try {
       const response = await fetch(
-        `http://localhost:5000/api/auth/user/${userId}`
+        `https://skillswap-backend-jjao.onrender.com/api/auth/user/${userId}`
       );
 
       const data = await response.json();
@@ -51,7 +51,7 @@ function Chat() {
 
     try {
       const response = await fetch(
-        `http://localhost:5000/api/messages/${currentUser.id}/${userId}`
+        `https://skillswap-backend-jjao.onrender.com/api/messages/${currentUser.id}/${userId}`
       );
 
       const data = await response.json();
@@ -104,7 +104,7 @@ function Chat() {
 
     try {
       const response = await fetch(
-        "http://localhost:5000/api/messages",
+        "https://skillswap-backend-jjao.onrender.com/api/messages",
         {
           method: "POST",
           headers: {

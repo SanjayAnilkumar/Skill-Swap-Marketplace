@@ -19,7 +19,7 @@ function Home() {
     setUser(loggedInUser);
 
     // Fetch skills
-    fetch("http://localhost:5000/api/skills")
+    fetch("https://skillswap-backend-jjao.onrender.com/api/skills")
       .then((response) => response.json())
       .then((data) => {
         if (Array.isArray(data)) {
@@ -39,7 +39,7 @@ function Home() {
 
     // Fetch requests
     fetch(
-      `http://localhost:5000/api/requests/${loggedInUser.id}`
+      `https://skillswap-backend-jjao.onrender.com/api/requests/${loggedInUser.id}`
     )
       .then((response) => response.json())
       .then((data) => {

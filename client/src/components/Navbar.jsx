@@ -36,7 +36,7 @@ function Navbar() {
 
     const checkRequests = () => {
       fetch(
-        `http://localhost:5000/api/requests/${user.id}`
+        `https://skillswap-backend-jjao.onrender.com/api/requests/${user.id}`
       )
         .then((response) => response.json())
         .then((data) => {
